@@ -1,0 +1,14 @@
+
+# Virtual environment
+venv/
+env/
+
+
+# VS Code settings
+.vscode/
+
+# IDE & editor-specific files
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
