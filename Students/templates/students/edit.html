@@ -14,7 +14,7 @@
             <div class="card border-warning mb-3">
                 <div class="card-header"><i class="fa-solid fa-pen-to-square fa-lg"></i> Update Student Information </div>
                 <div class="card-body">
-                    <form action="" method="POST">
+                <form action="" method="POST">
                         {% csrf_token %} <!-- To prevent CSRF -->
                         {{form.as_p}} <!-- This tells django to render the form specified in our student form class within the p tag => plugin the form here -->
                         <button type="submit" class="btn btn-success">Update</button>
@@ -27,3 +27,9 @@
     {% endif %}
 
 {% endblock %}
+
+
+
+
+
+<!--{% url 'edit_student' student.id %} if we want to use this then we gotta sent the Student data in the context as 'student' : Student since if student.id is not passed correctly, Django's reverse function cannot generate the URL-->
